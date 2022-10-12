@@ -67,7 +67,7 @@ cat(paste("a. Peluang =", peluang, "\n"))
 
 # Nomor 3B
 n <- 365
-dist <- rpois(365, lambda)
+dist <- rpois(n, lambda)
 cat("b. (Histogram Distribusi Poisson)\n")
 hist(dist,
     main = "Histogram Distribusi Poisson",
@@ -156,6 +156,7 @@ varian <- var(dist)
 cat(paste("c. Rataan =", rataan, "\n"))
 cat(paste("   Varian =", varian, "\n"))
 
+# Nomor 6
 cat("\nNomor 6:\n")
 
 # Nomor 6A
@@ -163,7 +164,7 @@ n <- 100
 normal_mean <- 50
 normal_sd <- 8
 
-data <- rnorm(n, mean, sd)
+data <- rnorm(n, normal_mean, normal_sd)
 mean <- mean(data)
 sd <- sd(data)
 
@@ -182,7 +183,7 @@ plot(data)
 # Nomor 6B
 cat("b. (Histogram Distribusi Normal)\n")
 hist(data,
-    main = "Histogram Distribusi Normal",
+    main = "5025211031_Aryan Shafa Wardana_Probstat_A_DNhistogram",
     col = "#808080",
     xlab = "X",
     breaks = 50)
