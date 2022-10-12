@@ -165,5 +165,23 @@ X2 = 6\
 Pada soal ini diberikan jumlah data `n = 100`, mean soal `mean_normal = 50`, dan standar deviasi soal `sd_normal = 8`. Dari variabel-variabel tersebut dapat dihasilkan data random dengan distribusi normal menggunakan fungsi `rnorm(n, mean, sd)`. Kemudian dari data yang dihasilkan tersebut didapatkan mean dan standar deviasi menggunakan fungsi `mean(data)` dan `sd(data)`. Untuk memperoleh X1 menggunakan 1 sampel random dari subset data yang lebih dari mean. Untuk memperoleh X2 menggunakan 1 sampel random dari subset data yang kurang dari mean. Untuk mendapatkan sampel dan subset dimanfaatkan fungsi `sample(x, size)` dan fungsi `subset(data, subset)`. Probabilitas dapat dihitung dengan mendapatkan probabilitas kumulatif `P(x ≤ X2)` dikurangi dengan probabilitas kumulatif `P(X1 ≤ x)`. Probabilitas kumulatif dapat dihitung menggunakan fungsi `pnorm(q, mean, sd)`. Z-Score dapat dihitung menggunakan fungsi `qnorm(p, mean, sd`. Kemudian data dapat diplot menggunakan fungsi `plot(data)`. Implementasi sebagai berikut.
 ![image](https://user-images.githubusercontent.com/115603634/195302159-e74649f1-fa15-4bcc-94dd-ea8f8c63f3be.png)
 Diperoleh hasil `Peluang = 0.563473548227874` dan `Z-Score = 50.6183357683722`.
-* ###
-* ###
+* ### Generate Histogram dari Distribusi Normal dengan breaks 50
+Format penamaan:\
+NRP_Nama_Probstat_{Nama Kelas}_DNhistogram\
+Contoh :\
+312312312_Rola_Probstat_A_DNhistogram\
+\
+Soal ini dapat diselesaikan dengan memasukkan `data` ke dalam fungsi `hist()` dan menambahkan nama histogram dengan memasukkan argumen `main = ` dan menambahkan breaks dengan cara memasukkan argumen `breaks = `. Implementasi sebagai berikut.
+```
+hist(data,
+main = "5025211031_Aryan Shafa Wardana_Probstat_A_DNhistogram",
+col = "#808080",
+xlab = "X",
+breaks = 50)
+```
+Grafik yang dihasilkan sebagai berikut.
+![image](https://user-images.githubusercontent.com/115603634/195304275-e040d69c-e3fc-4885-a683-31eb2fe1625c.png)
+* ### c. Nilai Varian (σ²) dari hasil generate random nilai Distribusi Normal.
+Varian dari hasil generate random nilai Distribusi Normal dapat diperoleh menggunakan fungsi `var(data)`. Implementasi sebagai berikut.
+![image](https://user-images.githubusercontent.com/115603634/195304616-0bf4005c-5431-4718-98f5-3a34ac314672.png)
+Hasil yang diperoleh adalah `Varian = 60.4525575661836`.
