@@ -168,8 +168,6 @@ data <- rnorm(n, normal_mean, normal_sd)
 mean <- mean(data)
 sd <- sd(data)
 
-# x1 and x2 are random numbers taken from data that are bigger
-# and bigger than the data mean, respectively
 x1 <- sample(subset(data, data > mean), 1)
 x2 <- sample(subset(data, data < mean), 1)
 
